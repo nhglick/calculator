@@ -1,0 +1,107 @@
+html {
+    background-color: #DD4A48;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 0;
+}
+
+button {
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+button:hover {
+    background-color: #cccccc;
+}
+
+h1 {
+    color: #4F091D;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    background-color: rgb(54, 54, 54);
+    box-shadow: 0 0 3px 3px #4F091D;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.display {
+    text-align: right;
+    background-color: #F5EEDC;
+    flex: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    color: #4F091D;
+}
+
+#last-result {
+    color: #8f7e82;
+}
+
+#last-result {
+    padding: 0;
+    margin: 4px;
+}
+
+#typing-area {
+    padding: 0;
+    margin: 4px;
+    font-size: 32px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex: 8;
+}
+
+.row-0, .row-1, .row-2, .row-3, .row-4{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    gap: 5px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    margin-left: 0px;
+    gap: 5px;
+}
+
+#clear {
+    flex: 1;
+}
+
+#delete {
+    flex: 8.8;
+}
+
+#decimal {
+    flex: 1;
+}
+
+#button-0 {
+    flex: 8.8;
+}
+
+.operator, .number-button {
+    flex: 1;
+}

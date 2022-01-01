@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./generate-buttons.js" defer></script>
+    <script src="./main.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <p id="last-result">0</p>
+            <p id="typing-area">0</p>
+        </div>
+        <div class="buttons">
+            <div class="left-section">
+                <div class="row-0">
+                    <button id="clear">c</button>
+                    <button id="delete">⌫</button>
+                </div>
+                <div class="row-1"></div>
+                <div class="row-2"></div>
+                <div class="row-3"></div>
+                <div class="row-4">
+                    <button id="decimal">.</button>
+                    <button id="button-0">0</button>
+                </div>
+            </div>
+            <div class="right-section">
+                <button id="divide" class="operator">÷</button>
+                <button id="multiply" class="operator">x</button>
+                <button id="subtract" class="operator">-</button>
+                <button id="add" class="operator">+</button>
+                <button id="evaluate">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
