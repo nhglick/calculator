@@ -13,7 +13,19 @@ const operationSymbols = {
     'subtract': '-',
     'divide': '/',
     'multiply': 'x'
-}
+};
+
+const keyboardSymbols = {
+    '+' : 'add',
+    '-' : 'subtract',
+    '/' : 'divide',
+    '*' : 'multiply',
+    'c' : 'clear',
+    '.' : 'decimal',
+    '=' : 'evaluate',
+    'Enter' : 'evaluate',
+    'Backspace' : 'delete'
+};
 
 let operandQueue = '';
 let operand1 = 0;
@@ -70,6 +82,7 @@ clearButton.addEventListener('click', () => {
         operand2 = 0;
         lowerDisplay.textContent = '0';
     }
+    decimalButton.disabled = false;
 });
 
 
@@ -118,3 +131,14 @@ for (const operator of operatorButtons) {
         operatorSelected = true;
     });
 }
+
+
+document.addEventListener('keydown', (e) => {
+    const key = e.key;
+    if(parseInt(key) || parseInt(key)===0)
+        numberButtons[parseInt(key)].click();
+    else {
+        const keyToBePressed = document.querySelector(`#${keyboardSymbols[key]}`);
+        keyToBePressed.click();
+    }
+});
